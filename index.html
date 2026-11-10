@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- site metas -->
+      <title>Vértice Motors | Encontre seu próximo carro</title>
+      <meta name="description" content="Conheça os veículos premium da Vértice Motors e encontre o carro ideal para você.">
+      <link rel="preload" as="image" href="images/img-1.png">
+      <link rel="icon" href="images/vertice-motors.svg" type="image/svg+xml">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- font awesome css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- header section strats -->
+      <header class="header_section" id="inicio">
+        <div class="container">
+            <a class="site_brand" href="#inicio" aria-label="Vértice Motors — Seu próximo destino começa aqui">
+               <span class="site_brand_name">Vértice <strong>Motors</strong></span>
+               <span class="site_brand_slogan">Seu próximo destino começa aqui.</span>
+            </a>
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#inicio">Início <span class="sr-only">(atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modelos">Modelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modelos">Preços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+         </div>
+      </header>
+      <!-- end header section -->
+      <!-- banner section start --> 
+      <div class="banner_section layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  <div id="banner_slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="hover" role="region" aria-label="Destaques de veículos" aria-roledescription="carrossel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active" data-image="images/img-1.png" data-image-alt="Lamborghini esportivo em detalhe">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">Luxo e desempenho em cada detalhe.</h1>
+                              <p class="banner_text">Explore veículos premium de grandes marcas e encontre seu próximo carro.</p>
+                              <a class="hero_cta" href="#modelos">Explorar modelos <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                           </div>
+                        </div>
+                        <div class="carousel-item" data-image="images/img-2.png" data-image-alt="Ford Mustang GT 5.0">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">Design esportivo. Presença marcante.</h1>
+                              <p class="banner_text">Conheça modelos premium com tecnologia, conforto e personalidade.</p>
+                              <a class="hero_cta" href="#catalogo-completo">Ver catálogo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                           </div>
+                        </div>
+                        <div class="carousel-item" data-image="images/img-3.png" data-image-alt="Detalhe da grade BMW">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">Sofisticação para novas jornadas.</h1>
+                              <p class="banner_text">Pesquise por marca, modelo, ano ou categoria e descubra as opções.</p>
+                              <a class="hero_cta" href="#destaques">Ver destaques do ano <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev" aria-label="Slide anterior">
+                     <i class="fa fa-angle-left" aria-hidden="true"></i>
+                     </a>
+                     <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next" aria-label="Próximo slide">
+                     <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     </a>
+                  </div>
+                  <form class="vehicle_search" id="vehicleSearch">
+                     <label class="sr-only" for="vehicleSearchInput">Buscar veículos</label>
+                     <input id="vehicleSearchInput" type="search" placeholder="Busque por modelo, marca, ano ou preço" autocomplete="off" aria-describedby="searchStatus" aria-controls="vehicleSuggestions" aria-expanded="false">
+                     <button type="submit" aria-label="Buscar veículos"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+                  <div id="vehicleSuggestions" class="search_suggestions" role="listbox" aria-label="Sugestões de veículos" hidden></div>
+                  <p class="search_status" id="searchStatus" aria-live="polite"></p>
+               </div>
+               <div class="col-md-6 padding_right0">
+                  <div class="banner_img">
+                     <img id="heroCarImage" class="hero_car_image is_active" src="images/img-1.png" alt="Lamborghini esportivo em detalhe">
+                     <img class="hero_car_image" src="images/img-3.png" alt="Detalhe da grade BMW" aria-hidden="true">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding" id="sobre">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_img"><img src="images/about-img.png" alt="Veículo disponível na Vértice Motors"></div>
+               </div>
+               <div class="col-md-6">
+                  <h3 class="about_taital">Mais do que carros, novas possibilidades.</h3>
+                    <p class="about_text">Na Vértice Motors, ajudamos você a encontrar um veículo que combina com seu estilo e seus planos. Conte com nossa equipe para conhecer as opções disponíveis.</p>
+                    <div class="readmore_btn"><a href="#contato">Conheça a Vértice Motors<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- models section start -->
+      <div class="models_section layout_padding" id="modelos">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="models_taital">Nossos modelos de carros</h1>
+               </div>
+            </div>
+            <div class="models_section_2" id="veiculo-lamborghini-huracan" data-search="lamborghini huracan huracán supercar esportivo v10">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="models_img"><img src="images/lamborghini-huracan.jpg" alt="Lamborghini Huracán GT3 no Essen Motor Show"></div>
+                     <a class="photo_credit" href="https://commons.wikimedia.org/wiki/File:Lambirghini_Huracan,_EMS_2023,_Essen_(P1160630-RR).jpg" target="_blank" rel="noopener noreferrer">Foto: MB-one · CC BY-SA 4.0</a>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="carolo_text"><span class="number_text">01</span>Lamborghini Huracán</h3>
+                     <p class="ullamco_text">Superesportivo italiano de linhas marcantes e motor V10.</p>
+                     <div class="price_main">
+                        <p class="price_text"><span>Preço</span> R$ 950.000,00</p>
+                        <div class="read_btn"><a href="#contato">Tenho interesse<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="models_section_2" id="veiculo-bmw-m3" data-search="bmw m3 serie série 3 sedan sedã esportivo">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="models_img"><img src="images/img-5.png" alt="BMW M3 sedã esportivo"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="carolo_text"><span class="number_text">02</span>BMW M3</h3>
+                     <p class="ullamco_text">Sedã esportivo que combina desempenho, precisão e conforto.</p>
+                     <div class="price_main">
+                        <p class="price_text"><span>Preço</span> R$ 1.500.000,00</p>
+                        <div class="read_btn"><a href="#contato">Tenho interesse<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <!-- models section end -->
+      <section class="expanded_catalog_section" id="catalogo-completo" aria-labelledby="expandedCatalogTitle">
+         <div class="container">
+            <div class="expanded_catalog_header">
+               <div>
+                  <p class="classic_eyebrow">Dados oficiais de veículos</p>
+                  <h2 id="expandedCatalogTitle">Catálogo de veículos premium</h2>
+                  <p>Versões reais de marcas premium, filtradas por marca, modelo, ano e categoria. As fotos são buscadas pelo nome do modelo e incluem crédito e licença.</p>
+               </div>
+               <div class="expanded_catalog_filter">
+                  <label for="vehicleCategoryFilter">Filtrar categoria</label>
+                  <select id="vehicleCategoryFilter">
+                     <option value="">Todas as categorias</option>
+                  </select>
+               </div>
+            </div>
+            <p class="expanded_catalog_status" id="expandedCatalogStatus" aria-live="polite"></p>
+            <div class="expanded_catalog_grid" id="expandedCatalogGrid"></div>
+            <nav class="catalog_pagination" aria-label="Paginação do catálogo">
+               <button type="button" id="catalogPrevious" aria-label="Página anterior">Anterior</button>
+               <span id="catalogPageStatus" aria-live="polite"></span>
+               <button type="button" id="catalogNext" aria-label="Próxima página">Próxima</button>
+            </nav>
+            <p class="expanded_catalog_source">Fonte: <a href="https://www.fueleconomy.gov/feg/epadata/vehicles.csv" target="_blank" rel="noopener noreferrer">U.S. Department of Energy e Environmental Protection Agency (EPA)</a>. O arquivo contém 5.700 registros no total; este catálogo mostra registros de marcas premium fora da categoria de clássicos e não indica disponibilidade em estoque.</p>
+         </div>
+      </section>
+      <div class="choose_section_2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <h1 class="rated_text"><span class="padding_10"><img src="images/icon-1.png"></span>3700</h1>
+                     <p class="house_text">Clientes satisfeitos</p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h1 class="rated_text"><span class="padding_10"><img src="images/icon-2.png"></span><span id="premiumVehicleCount">2.071</span></h1>
+                     <p class="house_text">Versões de marcas premium</p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h1 class="rated_text"><span class="padding_10"><img src="images/icon-3.png"></span>124</h1>
+                     <p class="house_text">Prêmios Recebidos</p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h1 class="rated_text"><span class="padding_10"><img src="images/icon-4.png"></span>704</h1>
+                     <p class="house_text">Concessionárias</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- blog section start -->
+      <div class="blog_section layout_padding" id="destaques">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="blog_taital">DESTAQUES DO ANO</h1>
+               </div>
+            </div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="blog_img"><img src="images/classic-cadillac-deville.jpg" alt="Cadillac DeVille clássico em destaque"></div>
+                     <a class="photo_credit" href="https://commons.wikimedia.org/wiki/File:1962_Cadillac_DeVille_Convertible_(9026711612).jpg" target="_blank" rel="noopener noreferrer">Foto: Niels de Wit · CC BY 2.0</a>
+                     <div class="btn_main">
+                        <div class="date_text"><a href="#contato">R$ 1.500.000,00</a></div>
+                     </div>
+                     <div class="blog_box">
+                        <h3 class="blog_text">Cadillac DeVille</h3>
+                        <p class="lorem_text">Design americano icônico, acabamento cromado e presença marcante.</p>
+                     </div>
+                     <div class="read_bt"><a href="#contato">Tenho interesse<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_img"><img src="images/mustang-gt-convertible.jpg" alt="Ford Mustang GT conversível em destaque"></div>
+                     <a class="photo_credit" href="https://commons.wikimedia.org/wiki/File:Ford_Mustang_GT_Convertible_SN-95_(Sterling_Ford).jpg" target="_blank" rel="noopener noreferrer">Foto: Bull-Doser · Domínio público</a>
+                     <div class="btn_main">
+                        <div class="date_text active"><a href="#contato">R$ 700.000,00</a></div>
+                     </div>
+                     <div class="blog_box">
+                        <h3 class="blog_text">Ford Mustang GT</h3>
+                        <p class="lorem_text">Ícone esportivo americano com visual marcante e presença inconfundível.</p>
+                     </div>
+                     <div class="read_bt active"><a href="#contato">Tenho interesse<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_img"><img src="images/bmw-m3-gt4.jpg" alt="BMW M3 GT4 em destaque"></div>
+                     <a class="photo_credit" href="https://commons.wikimedia.org/wiki/File:S%C3%B6derstr%C3%B6m_BMW_M3_GT4_Swedish_GT_Anderstorp_2012.jpg" target="_blank" rel="noopener noreferrer">Foto: Green Yoshi · CC BY-SA 3.0</a>
+                     <div class="btn_main">
+                        <div class="date_text"><a href="#contato">R$ 1.500.000,00</a></div>
+                     </div>
+                     <div class="blog_box">
+                        <h3 class="blog_text">BMW M3 GT4</h3>
+                        <p class="lorem_text">Versão de competição preparada para as pistas, com desempenho e aerodinâmica de corrida.</p>
+                     </div>
+                     <div class="read_bt"><a href="#contato">Tenho interesse<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="client_taital">Quem escolhe, recomenda.</h1>
+                  <p class="client_text">A experiência de quem já encontrou seu próximo carro com a gente.</p>
+               </div>
+            </div>
+            <div class="customer_section_2">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="box_main">
+                           <div class="customer_main">
+                              <div class="customer_left">
+                                 <div class="customer_img"><img src="images/client-img.png"></div>
+                              </div>
+                              <div class="customer_right">
+                                 <h3 class="customer_name">Michael R. Kile </h3>
+                                 <p class="enim_text">Fui muito bem atendido do início ao fim. A equipe entendeu o que eu procurava e tornou a escolha do meu carro muito mais tranquila.</p>
+                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- client section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding" id="contato">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="contact_taital contact_heading">Envie uma mensagem</h1>
+               </div>
+            </div>
+            <div class="contact_section_2">
+               <div class="mail_section map_form_container">
+                  <form id="contactForm" novalidate>
+                  <label class="sr-only" for="contactName">Nome completo</label>
+                  <input id="contactName" type="text" class="mail_text" placeholder="Seu nome completo" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+                  <label class="sr-only" for="contactPhone">Telefone</label>
+                  <input id="contactPhone" type="tel" class="mail_text" placeholder="Seu telefone com DDD" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\(\) .\-]{8,24}" maxlength="24" required>
+                  <label class="sr-only" for="contactEmail">E-mail</label>
+                  <input id="contactEmail" type="email" class="mail_text" placeholder="Seu e-mail" name="email" autocomplete="email" maxlength="254" required>
+                  <label class="sr-only" for="contactMessage">Mensagem</label>
+                  <textarea class="massage-bt" placeholder="Sua mensagem" rows="5" id="contactMessage" name="message" maxlength="1000" required></textarea>
+                  <p id="contactStatus" class="contact_status" role="status" aria-live="polite"></p>
+                  <div class="map_btn_main">
+                     <div class="send_bt"><button id="contactSubmit" type="submit">Enviar mensagem</button></div>
+                     <div class="map_bt"><a href="#" id="showMap">Abrir Maps</a></div>
+                  </div>
+                  </form>
+                  <div class="map_main map_container">
+                     <div class="map-responsive">
+                        <iframe title="Localização no Google Maps" src="https://www.google.com/maps?q=concession%C3%A1ria+de+ve%C3%ADculos+Brasil&output=embed" width="600" height="368" style="border:0; width: 100%;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         <div class="map_btn_main">
+                           <div class="map_bt d-flex justify-content-center w-100 map_center"><a href="#" id="showForm">Voltar ao formulário</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="location_main">
+               <div class="location_text">
+                  <ul>
+                     <li><a href="tel:+55718522369417"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+55 71) 85223-69417</span></a></li>
+                     <li><a href="mailto:contato@sonhovivo.com.br"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">contato@sonhovivo.com.br</span></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">&copy; 2026 Vértice Motors. Todos os direitos reservados.</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/vehicle-catalog-data.js"></script>
+      <script>
+         var catalogVehicles = window.SONHO_VIVO_VEHICLES;
+         var catalogPageSize = 24;
+         var currentCatalogPage = 0;
+         var filteredCatalogVehicles = [];
+         var catalogGrid = document.getElementById("expandedCatalogGrid");
+         var catalogStatus = document.getElementById("expandedCatalogStatus");
+         var catalogPageStatus = document.getElementById("catalogPageStatus");
+         var categoryFilter = document.getElementById("vehicleCategoryFilter");
+         var premiumMakes = [
+            "Acura", "Aston Martin", "Audi", "BMW", "BMW Alpina", "Bentley",
+            "Bugatti", "Bugatti Rimac", "Cadillac", "Ferrari", "Genesis", "Infiniti",
+            "Jaguar", "Lamborghini", "Land Rover", "Lexus", "Lincoln", "Lucid",
+            "Maserati", "Maybach", "Mercedes-Benz", "Porsche", "Rolls-Royce", "Tesla", "Volvo"
+         ];
+         var commonsPhotoCache = new Map();
+         var commonsPhotoQueue = [];
+         var commonsPhotoRequestsInFlight = 0;
+         var commonsPhotoUsedUrls = new Set();
+         var photoObserver = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+               if (entry.isIntersecting) {
+                  photoObserver.unobserve(entry.target);
+                  loadVehiclePhoto(entry.target);
+               }
+            });
+         }, { rootMargin: "200px" }) : null;
+
+         function getCommonsPhoto(make, model) {
+            var searchKey = normalizeSearchText(make + " " + model);
+            if (commonsPhotoCache.has(searchKey)) return commonsPhotoCache.get(searchKey);
+
+            var photoRequest = new Promise(function (resolve, reject) {
+               commonsPhotoQueue.push({
+                  make: make,
+                  model: model,
+                  searchKey: searchKey,
+                  resolve: resolve,
+                  reject: reject
+               });
+               processCommonsPhotoQueue();
+            });
+            commonsPhotoCache.set(searchKey, photoRequest);
+            return photoRequest;
+         }
+
+         function processCommonsPhotoQueue() {
+            while (commonsPhotoRequestsInFlight < 2 && commonsPhotoQueue.length) {
+               var request = commonsPhotoQueue.shift();
+               commonsPhotoRequestsInFlight++;
+               startCommonsPhotoRequest(request);
+            }
+         }
+
+         function startCommonsPhotoRequest(request) {
+               fetchCommonsPhoto(request.make, request.model).then(function (photo) {
+                  request.resolve(photo);
+               }).catch(function (error) {
+                  commonsPhotoCache.delete(request.searchKey);
+                  request.reject(error);
+               }).then(function () {
+                  commonsPhotoRequestsInFlight--;
+                  window.setTimeout(processCommonsPhotoQueue, 350);
+               });
+         }
+
+         function fetchCommonsPhoto(make, model) {
+            var makeTerms = normalizeSearchText(make).split(/\s+/).filter(function (term) {
+               return term.length > 2;
+            });
+            var modelTerms = normalizeSearchText(model).split(/\s+/).filter(function (term) {
+               return term.length > 1 && ["2wd", "4wd", "awd", "fwd", "rwd", "quattro", "xdrive", "4matic", "sedan", "coupe", "convertible", "cabriolet", "roadster", "hatchback", "wagon", "pickup", "van", "hybrid", "electric"].indexOf(term) === -1;
+            });
+            var modelPhrase = makeTerms.concat(modelTerms).join(" ");
+
+            function searchCommons(searchText) {
+               var query = new URLSearchParams({
+                  action: "query",
+                  generator: "search",
+                  gsrsearch: searchText,
+                  gsrnamespace: "6",
+                  gsrlimit: "30",
+                  prop: "imageinfo",
+                  iiprop: "url|extmetadata",
+                  iiurlwidth: "640",
+                  format: "json",
+                  origin: "*"
+               });
+
+               return fetch("https://commons.wikimedia.org/w/api.php?" + query.toString())
+                  .then(function (response) {
+                     if (!response.ok) throw new Error("Wikimedia Commons retornou HTTP " + response.status);
+                     return response.json();
+                  })
+                  .then(function (data) {
+                     var pages = data.query && data.query.pages ? Object.keys(data.query.pages).map(function (pageId) {
+                        return data.query.pages[pageId];
+                     }).sort(function (left, right) {
+                        return left.index - right.index;
+                     }) : [];
+                     var candidates = pages.map(function (page) {
+                        var imageInfo = page.imageinfo && page.imageinfo[0];
+                        if (!imageInfo || !imageInfo.thumburl || !imageInfo.extmetadata) return null;
+
+                        var metadata = imageInfo.extmetadata;
+                        var title = normalizeSearchText(page.title.replace(/^File:/, ""));
+                        var description = normalizeSearchText(
+                           (metadata.ImageDescription && metadata.ImageDescription.value || "")
+                              .replace(/<[^>]*>/g, " ")
+                        );
+                        var categories = normalizeSearchText(
+                           (metadata.Categories && metadata.Categories.value || "")
+                              .replace(/<[^>]*>/g, " ")
+                        );
+                        var searchableText = title + " " + description;
+                        var makeMatches = makeTerms.every(function (term) {
+                           return searchableText.indexOf(term) !== -1;
+                        });
+                        var modelMatches = modelTerms.length
+                           ? modelTerms.every(function (term) { return searchableText.indexOf(term) !== -1; })
+                           : title.indexOf(normalizeSearchText(model)) !== -1;
+
+                        if (!makeMatches || /scale model|diecast|toy car|miniature|interior|dashboard|engine bay|logo|badge|emblem|illustration/.test(searchableText)) {
+                           return null;
+                        }
+
+                        var exactModelMatches = modelTerms.length > 0 && searchableText.indexOf(modelPhrase) !== -1;
+                        var artist = metadata.Artist && metadata.Artist.value || "Autor não informado";
+                        var imageAssessment = normalizeSearchText(metadata.Assessments && metadata.Assessments.value || "");
+                        var aspectRatio = imageInfo.thumbwidth && imageInfo.thumbheight
+                           ? imageInfo.thumbwidth / imageInfo.thumbheight
+                           : 1;
+                        var qualityScore = exactModelMatches ? 100 : modelMatches ? 50 : 0;
+                        if (/quality|featured/.test(imageAssessment)) qualityScore += 5;
+                        if (aspectRatio >= 1.2) qualityScore += 3;
+                        if (aspectRatio < 0.9) qualityScore -= 3;
+                        if (/rear|back view|close up|detail|front wheel|engine/.test(title + " " + description)) qualityScore -= 4;
+                        if (/front|side view|roadster|coupe|convertible/.test(title)) qualityScore += 2;
+                        if (new RegExp(makeTerms.concat(modelTerms).join("|")).test(categories)) qualityScore += 3;
+                        if (/police|polizei|patrol|taxi|wreck|crash|damaged|emergency/.test(title + " " + description + " " + categories)) qualityScore -= 8;
+                        if (/^file:/.test(title)) qualityScore -= 1;
+
+                        return {
+                           url: imageInfo.thumburl,
+                           pageUrl: imageInfo.descriptionurl,
+                           artist: artist.replace(/<[^>]*>/g, " ").trim(),
+                           license: metadata.LicenseShortName && metadata.LicenseShortName.value || "Licença não informada",
+                           score: qualityScore,
+                           index: page.index,
+                           exactModel: exactModelMatches
+                        };
+                     }).filter(Boolean).sort(function (left, right) {
+                        return right.score - left.score || left.index - right.index;
+                     });
+
+                     return candidates;
+                  });
+            }
+
+            return searchCommons(make + " " + model).then(function (candidates) {
+               var matchingModel = candidates.filter(function (candidate) {
+                  return candidate.exactModel || candidate.score >= 50;
+               });
+               if (matchingModel.length) {
+                  return matchingModel.map(function (candidate) {
+                     candidate.generic = !candidate.exactModel;
+                     return candidate;
+                  });
+               }
+
+               return searchCommons(make + " car").then(function (brandCandidates) {
+                  return brandCandidates.map(function (candidate) {
+                     candidate.generic = true;
+                     return candidate;
+                  });
+               });
+            });
+         }
+
+         function loadVehiclePhoto(photoFrame) {
+            var image = photoFrame.querySelector("img");
+            var placeholder = photoFrame.querySelector(".vehicle_entry_image_placeholder");
+            var photoCredit = photoFrame.parentElement.querySelector(".photo_credit");
+
+            getCommonsPhoto(photoFrame.dataset.make, photoFrame.dataset.model).then(function (photos) {
+               if (!photoFrame.isConnected) return;
+               var photo = photos.find(function (candidate) {
+                  return !commonsPhotoUsedUrls.has(candidate.url);
+               });
+               if (!photo) {
+                  placeholder.textContent = "Foto exata não encontrada. ";
+                  var googleImageSearch = document.createElement("a");
+                  googleImageSearch.href = "https://www.google.com/search?tbm=isch&q=" +
+                     encodeURIComponent(photoFrame.dataset.make + " " + photoFrame.dataset.model + " carro");
+                  googleImageSearch.target = "_blank";
+                  googleImageSearch.rel = "noopener noreferrer";
+                  googleImageSearch.textContent = "Procurar imagens no Google";
+                  placeholder.appendChild(googleImageSearch);
+                  return;
+               }
+               commonsPhotoUsedUrls.add(photo.url);
+
+               image.onload = function () {
+                  image.hidden = false;
+                  placeholder.hidden = true;
+               };
+               image.onerror = function () {
+                  placeholder.textContent = "Não foi possível exibir esta foto";
+                  console.warn("A foto correspondente não carregou: " + photo.url);
+               };
+               image.src = photo.url;
+               if (photo.generic) image.alt = "Foto ilustrativa de um veículo da marca " + photoFrame.dataset.make;
+               photoCredit.href = photo.pageUrl;
+               photoCredit.textContent = (photo.generic ? "Foto ilustrativa da marca " + photoFrame.dataset.make + " · " : "") +
+                  "Foto: " + photo.artist + " · " + photo.license;
+               photoCredit.hidden = false;
+            }).catch(function (error) {
+               if (!photoFrame.isConnected) return;
+               placeholder.textContent = "Não foi possível buscar uma foto agora";
+               console.warn("Falha ao buscar foto para " + photoFrame.dataset.make + " " + photoFrame.dataset.model + ".", error);
+            });
+         }
+
+         if (!Array.isArray(catalogVehicles) || catalogVehicles.length !== 5700) {
+            console.error("O catálogo ampliado não foi carregado corretamente.");
+            catalogStatus.textContent = "Não foi possível carregar o catálogo ampliado. Atualize a página para tentar novamente.";
+            catalogVehicles = [];
+         }
+
+         catalogVehicles = catalogVehicles.filter(function (vehicle) {
+            return premiumMakes.indexOf(vehicle.make) !== -1 &&
+               normalizeSearchText(vehicle.category) !== "classicos";
+         });
+         document.getElementById("premiumVehicleCount").textContent =
+            catalogVehicles.length.toLocaleString("pt-BR");
+
+         Array.from(new Set(catalogVehicles.map(function (vehicle) {
+            return vehicle.category;
+         }))).sort().forEach(function (category) {
+            var option = document.createElement("option");
+            option.value = category;
+            option.textContent = category;
+            categoryFilter.appendChild(option);
+         });
+         $(categoryFilter).niceSelect("update");
+
+         function matchesSearchTerms(value, searchTerms) {
+            var content = normalizeSearchText(value);
+            var compactContent = content.replace(/[^a-z0-9]/g, "");
+            return searchTerms.every(function (term) {
+               var compactTerm = term.replace(/[^a-z0-9]/g, "");
+               return !compactTerm || content.includes(term) || compactContent.includes(compactTerm);
+            });
+         }
+
+         function getCatalogMatches(query) {
+            var searchTerms = query.split(/\s+/).filter(Boolean);
+            var category = categoryFilter.value;
+            return catalogVehicles.filter(function (vehicle) {
+               var matchesCategory = !category || vehicle.category === category;
+               var searchableText = [
+                  vehicle.make,
+                  vehicle.model,
+                  vehicle.year,
+                  vehicle.category,
+                  vehicle.engine,
+                  vehicle.drive,
+                  vehicle.transmission,
+                  vehicle.fuel,
+                  vehicle.sizeClass
+               ].join(" ");
+               return matchesCategory && matchesSearchTerms(searchableText, searchTerms);
+            });
+         }
+
+         function appendVehicleSpec(container, label, value) {
+            var item = document.createElement("div");
+            var term = document.createElement("dt");
+            var detail = document.createElement("dd");
+            term.textContent = label;
+            detail.textContent = value || "Não informado";
+            item.appendChild(term);
+            item.appendChild(detail);
+            container.appendChild(item);
+         }
+
+         function renderCatalog() {
+            var query = normalizeSearchText(document.getElementById("vehicleSearchInput").value);
+            filteredCatalogVehicles = getCatalogMatches(query);
+            var pageCount = Math.max(1, Math.ceil(filteredCatalogVehicles.length / catalogPageSize));
+            currentCatalogPage = Math.min(currentCatalogPage, pageCount - 1);
+            var start = currentCatalogPage * catalogPageSize;
+            var pageVehicles = filteredCatalogVehicles.slice(start, start + catalogPageSize);
+            var fragment = document.createDocumentFragment();
+            if (photoObserver) photoObserver.disconnect();
+            commonsPhotoUsedUrls.clear();
+
+            pageVehicles.forEach(function (vehicle) {
+               var card = document.createElement("article");
+               card.className = "vehicle_entry_card";
+
+               var imageFrame = document.createElement("div");
+               imageFrame.className = "vehicle_entry_image";
+               imageFrame.dataset.make = vehicle.make;
+               imageFrame.dataset.model = vehicle.model;
+
+               var imagePlaceholder = document.createElement("div");
+               imagePlaceholder.className = "vehicle_entry_image_placeholder";
+               imagePlaceholder.setAttribute("role", "status");
+               imagePlaceholder.setAttribute("aria-live", "polite");
+               imagePlaceholder.textContent = "Buscando foto correspondente…";
+
+               var image = document.createElement("img");
+               image.alt = "Foto de " + vehicle.make + " " + vehicle.model;
+               image.loading = "eager";
+               image.decoding = "async";
+               image.hidden = true;
+               imageFrame.appendChild(imagePlaceholder);
+               imageFrame.appendChild(image);
+
+               var photoCredit = document.createElement("a");
+               photoCredit.className = "photo_credit";
+               photoCredit.target = "_blank";
+               photoCredit.rel = "noopener noreferrer";
+               photoCredit.hidden = true;
+
+               var meta = document.createElement("div");
+               meta.className = "vehicle_entry_meta";
+               var category = document.createElement("span");
+               var year = document.createElement("span");
+               category.textContent = vehicle.category;
+               year.textContent = String(vehicle.year);
+               meta.appendChild(category);
+               meta.appendChild(year);
+
+               var title = document.createElement("h3");
+               title.textContent = vehicle.make + " " + vehicle.model;
+
+               var vehicleClass = document.createElement("p");
+               vehicleClass.className = "vehicle_entry_class";
+               vehicleClass.textContent = "Categoria oficial: " + (vehicle.sizeClass || vehicle.category);
+
+               var description = document.createElement("p");
+               description.className = "vehicle_entry_description";
+               description.textContent = "Versão registrada no catálogo oficial de veículos.";
+
+               var specs = document.createElement("dl");
+               specs.className = "vehicle_entry_specs";
+               appendVehicleSpec(specs, "Motor", vehicle.engine ? vehicle.engine + " L" : "");
+               appendVehicleSpec(specs, "Tração", vehicle.drive);
+               appendVehicleSpec(specs, "Câmbio", vehicle.transmission);
+               appendVehicleSpec(specs, "Combustível", vehicle.fuel);
+
+               var footer = document.createElement("div");
+               footer.className = "vehicle_entry_footer";
+               var price = document.createElement("strong");
+               price.textContent = "Preço sob consulta";
+               var contactLink = document.createElement("a");
+               contactLink.href = "#contato";
+               contactLink.setAttribute("aria-label", "Consultar sobre " + vehicle.make + " " + vehicle.model + " " + vehicle.year);
+               contactLink.textContent = "Consultar";
+               footer.appendChild(price);
+               footer.appendChild(contactLink);
+
+               card.appendChild(imageFrame);
+               card.appendChild(photoCredit);
+               card.appendChild(meta);
+               card.appendChild(title);
+               card.appendChild(vehicleClass);
+               card.appendChild(description);
+               card.appendChild(specs);
+               card.appendChild(footer);
+               fragment.appendChild(card);
+            });
+
+            catalogGrid.replaceChildren(fragment);
+            Array.from(catalogGrid.querySelectorAll(".vehicle_entry_image")).forEach(function (imageFrame) {
+               if (photoObserver) {
+                  photoObserver.observe(imageFrame);
+               } else {
+                  loadVehiclePhoto(imageFrame);
+               }
+            });
+            catalogStatus.textContent = filteredCatalogVehicles.length.toLocaleString("pt-BR") +
+               " veículos encontrados · exibindo " +
+               (filteredCatalogVehicles.length ? start + 1 : 0) + "–" +
+               Math.min(start + catalogPageSize, filteredCatalogVehicles.length) + ".";
+            catalogPageStatus.textContent = "Página " + (currentCatalogPage + 1) + " de " + pageCount;
+            document.getElementById("catalogPrevious").disabled = currentCatalogPage === 0;
+            document.getElementById("catalogNext").disabled = currentCatalogPage >= pageCount - 1;
+         }
+
+         categoryFilter.addEventListener("change", function () {
+            currentCatalogPage = 0;
+            document.getElementById("vehicleSearch").requestSubmit();
+         });
+
+         document.getElementById("catalogPrevious").addEventListener("click", function () {
+            if (currentCatalogPage > 0) {
+               currentCatalogPage--;
+               renderCatalog();
+            }
+         });
+
+         document.getElementById("catalogNext").addEventListener("click", function () {
+            if ((currentCatalogPage + 1) * catalogPageSize < filteredCatalogVehicles.length) {
+               currentCatalogPage++;
+               renderCatalog();
+            }
+         });
+
+         renderCatalog();
+
+         var searchInput = document.getElementById("vehicleSearchInput");
+         var searchSuggestions = document.getElementById("vehicleSuggestions");
+         var maxSuggestions = 6;
+
+         function renderSearchSuggestions(query) {
+            var normalizedQuery = normalizeSearchText(query);
+            var terms = normalizedQuery.split(/\s+/).filter(Boolean);
+            if (!normalizedQuery || terms.length === 0) {
+               searchSuggestions.hidden = true;
+               searchSuggestions.innerHTML = "";
+               searchInput.setAttribute("aria-expanded", "false");
+               return;
+            }
+
+            var matches = catalogVehicles.filter(function (vehicle) {
+               var makeModel = normalizeSearchText(vehicle.make + " " + vehicle.model);
+               var makeOnly = normalizeSearchText(vehicle.make);
+               var modelOnly = normalizeSearchText(vehicle.model);
+               var queryText = terms.join(" ");
+
+               return makeModel.indexOf(queryText) === 0 ||
+                  makeOnly.indexOf(queryText) === 0 ||
+                  modelOnly.indexOf(queryText) === 0;
+            });
+
+            var uniqueSuggestions = [];
+            matches.forEach(function (vehicle) {
+               var label = vehicle.make + " " + vehicle.model + (vehicle.year ? " · " + vehicle.year : "");
+               if (!uniqueSuggestions.some(function (entry) {
+                  return entry.label === label;
+               })) {
+                  uniqueSuggestions.push({ label: label, value: vehicle.make + " " + vehicle.model });
+               }
+            });
+
+            var suggestions = uniqueSuggestions.slice(0, maxSuggestions);
+            searchSuggestions.innerHTML = "";
+
+            if (!suggestions.length) {
+               searchSuggestions.hidden = true;
+               searchInput.setAttribute("aria-expanded", "false");
+               return;
+            }
+
+            suggestions.forEach(function (suggestion) {
+               var suggestionButton = document.createElement("button");
+               suggestionButton.type = "button";
+               suggestionButton.className = "search_suggestion_item";
+               suggestionButton.setAttribute("role", "option");
+               suggestionButton.textContent = suggestion.label;
+               suggestionButton.addEventListener("click", function () {
+                  searchInput.value = suggestion.value;
+                  searchSuggestions.hidden = true;
+                  searchInput.setAttribute("aria-expanded", "false");
+                  document.getElementById("vehicleSearch").requestSubmit();
+               });
+               searchSuggestions.appendChild(suggestionButton);
+            });
+
+            searchSuggestions.hidden = false;
+            searchInput.setAttribute("aria-expanded", "true");
+         }
+
+         searchInput.addEventListener("input", function () {
+            renderSearchSuggestions(searchInput.value);
+            if (!searchInput.value.trim()) {
+               searchSuggestions.hidden = true;
+               searchInput.setAttribute("aria-expanded", "false");
+            }
+         });
+
+         document.addEventListener("click", function (event) {
+            var clickedInsideSearch = event.target.closest("#vehicleSearch") || event.target.closest("#vehicleSuggestions");
+            if (!clickedInsideSearch) {
+               searchSuggestions.hidden = true;
+               searchInput.setAttribute("aria-expanded", "false");
+            }
+         });
+
+         document.getElementById("vehicleSearch").addEventListener("submit", function (event) {
+            event.preventDefault();
+            searchSuggestions.hidden = true;
+            searchInput.setAttribute("aria-expanded", "false");
+
+            var query = normalizeSearchText(document.getElementById("vehicleSearchInput").value);
+            var vehicles = document.querySelectorAll("#modelos .models_section_2[data-search]");
+            var matchingVehicles = [];
+
+            vehicles.forEach(function (vehicle) {
+               var matches = matchesSearchTerms(
+                  vehicle.textContent + " " + vehicle.dataset.search,
+                  query.split(/\s+/).filter(Boolean)
+               );
+
+               vehicle.hidden = !matches;
+               vehicle.classList.remove("search_result");
+               if (matches) matchingVehicles.push(vehicle);
+            });
+
+            var status = document.getElementById("searchStatus");
+            currentCatalogPage = 0;
+            renderCatalog();
+            var totalMatches = matchingVehicles.length + filteredCatalogVehicles.length;
+
+            if (!query) {
+               status.textContent = "Exibindo os modelos disponíveis. Busque por marca, modelo, ano ou categoria.";
+               return;
+            }
+
+            if (totalMatches) {
+               status.textContent = totalMatches.toLocaleString("pt-BR") +
+                  (totalMatches === 1 ? " veículo encontrado." : " veículos encontrados.") +
+                  " Exibindo os resultados no catálogo.";
+               if (matchingVehicles.length) {
+                  matchingVehicles[0].classList.add("search_result");
+                  matchingVehicles[0].scrollIntoView({ behavior: "smooth", block: "center" });
+               } else {
+                  document.getElementById("catalogo-completo").scrollIntoView({ behavior: "smooth" });
+               }
+            } else {
+               status.textContent = "Nenhum veículo encontrado. Tente outra marca, modelo ou ano.";
+               document.getElementById("modelos").scrollIntoView({ behavior: "smooth" });
+            }
+         });
+
+         $("#banner_slider").on("slide.bs.carousel", function (event) {
+            var nextSlide = event.relatedTarget;
+            var currentImage = document.getElementById("heroCarImage");
+            var nextImage = document.querySelector(".hero_car_image:not(.is_active)");
+
+            if (nextSlide && currentImage && nextImage) {
+               var imageReady = false;
+               var showNextImage = function () {
+                  if (imageReady) return;
+                  imageReady = true;
+                  nextImage.onload = null;
+                  nextImage.classList.add("is_active");
+                  nextImage.removeAttribute("aria-hidden");
+                  currentImage.classList.remove("is_active");
+                  currentImage.setAttribute("aria-hidden", "true");
+                  currentImage.alt = "";
+                  currentImage.removeAttribute("id");
+                  nextImage.id = "heroCarImage";
+               };
+
+               nextImage.onload = showNextImage;
+               nextImage.src = nextSlide.getAttribute("data-image");
+               nextImage.alt = nextSlide.getAttribute("data-image-alt");
+
+               if (nextImage.complete && nextImage.naturalWidth) {
+                  showNextImage();
+               }
+
+               var slideIndex = Array.prototype.indexOf.call(
+                  nextSlide.parentElement.children,
+                  nextSlide
+               );
+               var backgroundPositions = ["center, 50% 50%", "center, 54% 46%", "center, 46% 54%"];
+               document.querySelector(".banner_section").style.backgroundPosition =
+                  backgroundPositions[slideIndex % backgroundPositions.length];
+            }
+         });
+
+         var contactForm = document.getElementById("contactForm");
+         var contactStatus = document.getElementById("contactStatus");
+
+         contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            var phoneInput = document.getElementById("contactPhone");
+            var phoneDigits = phoneInput.value.replace(/\D/g, "");
+            var invalidField = Array.from(contactForm.querySelectorAll("input, textarea")).find(function (field) {
+               return !field.checkValidity();
+            });
+            if (!invalidField && (phoneDigits.length < 8 || phoneDigits.length > 15)) {
+               invalidField = phoneInput;
+            }
+            if (invalidField) {
+               contactStatus.textContent = "Preencha corretamente todos os campos para enviar sua mensagem.";
+               invalidField.focus();
+               return;
+            }
+
+            var subject = "Mensagem pelo site — Vértice Motors";
+            var body = [
+               "Nome: " + document.getElementById("contactName").value.trim(),
+               "Telefone: " + document.getElementById("contactPhone").value.trim(),
+               "E-mail: " + document.getElementById("contactEmail").value.trim(),
+               "",
+               "Mensagem:",
+               document.getElementById("contactMessage").value.trim()
+            ].join("\n");
+            contactStatus.textContent = "Abrindo seu aplicativo de e-mail. Revise a mensagem e clique em Enviar para concluir.";
+            window.location.href = "mailto:contato@sonhovivo.com.br?subject=" +
+               encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+         });
+
+         function normalizeSearchText(value) {
+            return value
+               .trim()
+               .toLocaleLowerCase("pt-BR")
+               .normalize("NFD")
+               .replace(/[\u0300-\u036f]/g, "");
+         }
+      </script>
+   </body>
+</html>
